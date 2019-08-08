@@ -3,7 +3,7 @@ set -ex
 export DEBIAN_FRONTEND=noninteractive
 apt-get update && apt-get install -y tzdata
 gem install bundler -v 2.0.1
-apt-get install chromium-chromedriver
+apt-get -y install chromium-chromedriver
 # before_install
 gem update --system
 gem --version
